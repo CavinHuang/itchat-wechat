@@ -132,6 +132,7 @@ def handle_groups_message(msg):
 
     # 去掉 at 标记
     text = re.sub(at_compile, '', text)
+    print('at助手', text)
 
     reply_text = get_auto_reply(text, ated_uuid)  # 获取自动回复
     if reply_text:  # 如内容不为空，回复消息
